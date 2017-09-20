@@ -3,6 +3,7 @@ package com.example.kimgo.kimgouweleeuw_pset3_2;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void trackStartIntent(ArrayList<String> trackData) {
+        Log.d("hallo", "hallo2");
         Intent dataIntent = new Intent(this, DataActivity.class);
         dataIntent.putExtra("data", trackData);
         this.startActivity(dataIntent);
